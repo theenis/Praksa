@@ -1,0 +1,29 @@
+#header {
+  background-color: #f44444;
+  font-family: monospace;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  height: 30%;
+  width: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+#paragrapf
+{
+    background-color: rgba(241, 71, 71, 0.74);
+    color: whitesmoke;
+    width: 30%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+#center {
+  background-color: #ddfb93;
+  width: 70%;
+  height: auto;
+}
