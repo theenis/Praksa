@@ -1,0 +1,67 @@
+
+translatelab.cc/v2/login stranica
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+  DEKSTOP OCJENE:
+
+ -Performanse: 93 
+ -Pristupacnost: 74
+ -Najbolja praksa: 93
+ -Optimizacija pretrazivanja: 90
+
+Performanse:
+ -Lighthouse kaze da ima javascript duplikata ali ne moze izmjeriti duzinu i preporucuje da se to obrise
+ -Takodjer kaze da ima javascript kodova koji se ne koriste ali ne moze izmjeriti duzinu i preporucuje brisanje
+ -Preporucuje da u javascript usvojimo modernu strategiju implementacije skripte pomocu otkrivanja znacajki modula
+ kako bi smanjili kolicinu isporucenog koda
+Dijagnostika 
+ -Kada bi napravili da se fontovi dizajniraju preko css-a a ne preko google fontova ustedili bi 210 ms.
+ -Trebali bi postaviti eksplicitnu sirinu i visinu slike loga da bi smanjili pomake izgleda i poboljsali CLS
+ -Duze trajanje predmemorije ubrzat ce ponovo ucitavanje stranice (jedan cache traje 7 dana, 3 traju 60 dana a 28 traju 30 dana)
+ -Animacije koje nisu slozene mogu bit nezgodne i povecati CLS, takvih je 5 ne podrzavaju pravilno CSS
+
+Pristupacnost:
+ -Jedan button nema pristupno ime i citac zaslona za slabovidne osobe nazivaju ga "button" i taj button neupotrebljiv za njih (a.nav-link)
+ 
+Najbolja praksa:
+ -Dvije third-party skripte sadrze poznate sigurnosne ranjivosti koje napadaci lako prepoznaju i iskoristavaju
+ 
+Optimizacija pretrazivanja:
+ -Dokument nema meta opis koji moze biti ukljucen u rezultate pretrazivanja radi sazetijeg pretrazivajna sadrzaja stranjce
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+ OCJENE ZA OTVARANJE NA MOBITELU: 
+
+ -Performanse: 60
+ -Pristupacnost: 74
+ -Najbolja praksa: 93
+ -Optimizacija pretrazivanja: 89
+
+Performanse:
+ -Preporucuje da razmislimo o koristenju <link rel=preload> za davanje prioriteta dohvatanju resursa koji su trenutno
+ zatrazeni kasnije pri ucitavanju stranice (to su style.css i webfonts) 
+ -Resursi blokiraju prvu boju stranice. Treba razmislit o ispuruci kriticnog js/css i odgadjanju svih nekriticnih js/css
+ (takvih je ukupno 7 i na njima se moze ustediti 4010 ms pri ucitavanju) 
+ -Treba ukloniti sva mrtva pravila iz stilova i odgoditi ucitavanje stilova koji se ne koriste 
+ -Bilo bi dobro smanjiti tezinu slike, takodje bi smanjili brzinu ucitavanja
+ -Trebali bi razmisliti o dodavanju "preconnect" ili "dns-prefetch" da bi uspostavili ranije vezu sa vaznijim third-party
+Dijagnostika: 
+ -Osigurati da tekst ostane vidljiv tjekom ucitavanje webfontova (fonts.gstatic - takvih je 4)
+ -Trebali bi postaviti eksplicitnu sirinu i visinu slike loga da bi smanjili pomake izgleda i poboljsali CLS
+ -Smanjiti rad glavne niti, to jest smanjenje vremena potrebnog za parsiranje, kompajliranje i izvrsavanje JS-a
+ -Duze trajanje predmemorije ubrzat ce ponovo ucitavanje stranice (jedan cache traje 7 dana, 3 traju 60 dana a 28 traju 30 dana)
+
+Pristupacnost:
+ -Jedan button nema pristupno ime i citac zaslona za slabovidne osobe nazivaju ga "button" i taj button neupotrebljiv za njih, 
+ ovo vazi i za input-e emaila i sifre
+ 
+Najbolja praksa:
+ -Dvije third-party skripte sadrze poznate sigurnosne ranjivosti koje napadaci lako prepoznaju i iskoristavaju
+
+Optimizacija pretrazivanja:
+ -Dokument nema meta opis koji moze biti ukljucen u rezultate pretrazivanja radi sazetijeg pretrazivajna sadrzaja stranjce
+
+ 
+ 
