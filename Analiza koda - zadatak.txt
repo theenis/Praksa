@@ -1,0 +1,35 @@
+Nepoznato:
+
+ FOLDER classes:
+1. file: emailbody.class.php na 20. liniji src: local... (to mogu sam savladat).
+2. file: user.class.php postoje funkcije user_data, user_data2, user_data3. Da li te funkcije sluze za dobavljanje
+   podataka npr user_data za pregled mog id-a, email-a i imena?    mozda je odgovor u includes/upload_img i slicno
+
+ FOLDER functions:
+3. u add_language_function.php na 27. liniji sta se dodjeljuje promjenljivoj translate u viticastim tj. "[]" 
+   zagradama? 
+4. file: delete-section.php zasto u header funkciji pored porjectname saljem i vrijeme(time=".$_GET['time']")?
+5. file: get_project_names.php Da li se u while petlji na 31. liniji promjenjiva i koristi samo da bi 
+   se while petlja ponovo izvrsila(jer se $i vise nigdje ne spominje tj koristi)?
+6. file: generated_functions linija 90. da li se cookies.get("lang") poredi sa stringom "undefined" ili?
+7. file: generated_functions linija 93. da li se ovo "expires: 365" json vrijednost koja je tu definisana ili?
+8. file: generated_functions linija 107. treba mi pojasnjenje za link, sta radi, gdje vodi i koja mu je svrha? 
+ 
+ FOLDER includes:
+9. forgotten_pasword.inc.php Pokusao sam se registrirati na stranicu da vidim kako funkcionise promjena
+passworda ali nisam uspio. Zanima me, kad prijavim 
+Zeljeznicara!1
+
+ FOLDER modules:
+10. file: analytics.module.php linije 2., 3., 4., 5. prepoznajem da je javascript u pitanju ali trenutno
+ne znam komande koje se koriste pa cu to morati nauciti.
+11. file: script.module.php i styles.module.php takodjer prepoznajem o cemu je rijec ali ne znam za sta sluze linkovi
+
+ FOLDER pages:
+12.add-more-sections.page.php linije 19. 20. 21. zasto je 3 puta u 3 linije otvoren i zatvoren php tag zbog pisanja php koda?
+
+ FOLDER PHPMailer:
+13. Volio bi da se ovaj folder kompletan pojasni ma da znam od prilike kako radi jer smo imali slicnu lekciju u akademiji
+
+ FOLDER plugins:
+14. Takodjer volio bi kratko pojasnjenje
